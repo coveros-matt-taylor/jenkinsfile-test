@@ -1,7 +1,7 @@
 node {
     stage('Checkout') {
         echo 'Checkout....'
-        checkout 'https://github.com/coveros-matt-taylor/springboot-docker-test.git'
+        checkout scm
     }
     stage('Build') {
         echo 'Building....'
